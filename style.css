@@ -1,77 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+#app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+}
+
+.container {
+    padding: 1.6rem 2.4rem;
+    width: min(160rem, 100%);
+    margin: 0 auto;
+}
+
+html, body {
+    font-family: 'Mulish', sans-serif;
+}
+
 body {
+    margin: 0 auto;
+}
+
+header {
+    height: 6rem;
+
     display: flex;
-    justify-content: center;
-    background: #e4e4e4;
+    align-items: center;
+    gap: 2.6rem;
 
+    padding: 1.6rem 2.8rem;
+
+    background-color: #065E7C;
 }
 
-.page {
-    margin-top: 40px;
-    width: 500px;
-    background: white;
-    padding: 75px;
-    border-radius: 10px;
-    text-align: center;
- 
+header img {
+    width: 5rem;
+    height: 5rem;
 }
-
-#logo {
-    width: 300px;
-}
-
-h1 {
-    margin: 40px 0 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
-}
-
-p {
-    margin-bottom: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 23px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 
 a {
     text-decoration: none;
     color: white;
-    padding: 10px 25px;
-
+    font-weight: bold;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2.6rem;
+}
+
+nav ul li {
+    font-size: 1.6rem;
+}
+
+li {
+    list-style: none;
+}
+
+
+main {
+    background: radial-gradient(circle, rgba(255,255,255,1) 12%, rgba(214,210,196,1) 45%);
+    overflow-y: scroll;
+
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+
+#principal {
+    text-align: center;
+}
+
+#principal p {
+    font-size: 1.5rem;
+    line-height: 160%;
+
+    color: black;
+
+    margin: 1.8rem 0 4rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    margin: 2rem 0 2rem;
 }
 
 #whatsButton {
     background-color: forestgreen;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Mulish', sans-serif;
     border-style: none;
 
+    width: 11rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    border-radius: 4px;
+    border-radius: .4rem;
+
+    padding: .4rem;
 
     cursor: pointer;
-
 }
 
 #emailButton {
     background-color: dodgerblue;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Mulish', sans-serif;
     border-style: none;
 
+    width: 10rem;
+
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
     
-    border-radius: 4px;
+    border-radius: .4rem;
+
+    padding: .4rem;
 
     cursor: pointer;
+}
+
+a p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+
+    color: white;
+}
+
+.contact-p {
+    font-size: 1.6rem;
+    line-height: 160%;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+}
+
+#services {
+    margin-top: 4rem;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    margin-top: 2rem;
+}
+
+.details h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 160%;
+
+    margin-bottom: 1rem;
+}
+
+.details ul li {
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    color: black;
+}
+
+#quem-sou-eu {
+    margin-top: 4rem;
+}
+
+#quem-sou-eu h1 {
+    margin-bottom: 2rem;
+
+}
+
+#quem-sou-eu img {
+    width: 20rem;
+    height: 22rem;
+
+    margin: 1.5rem 0 2rem;
+}
+
+#quem-sou-eu p {
+    font-size: 1.6rem;
+    line-height: 160%;
+
+}
+
+footer {
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+
+    max-height: 5rem;
+
+    color: white;
+    background-color: #065E7C;
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: 770px) {
+    body {
+        max-width: 1600px;
+    }
+
+    main {
+        padding-left: 2.5rem;
+
+        padding-right: 2.5rem;
+    }
+
+    .wrapper {
+        display: flex;
+        gap: 9rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #principal {
+        text-align: start;
+        max-width: 45rem;
+
+    }
+
+    #principal img {
+        width: 30rem;
+    }
+
+
+    .buttons {
+        display: flex;
+        justify-content: start;
+        gap: 2rem;
+    
+        margin: 2rem 0 2rem;
+    }
+
+    .contact-p {
+        font-size: 2rem;
+        line-height: 160%;
+        font-weight: bold;
+    
+        display: flex;
+        justify-content: start;
+    }
+
+    #services {
+        margin: 0;
+    }
+
+    .wrapper-perfil {
+        display: flex;
+        gap: 5rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    main {
+        padding-left: 10rem;
+
+        padding-right: 10rem;
+    }
+
+    .wrapper {
+        display: flex;
+        gap: 15rem;
+    }
+
+    #services {
+        margin-left: 5rem;
+    }
+
+}
+
+@media (min-width: 1310px) {
+    main {
+        padding-left: 20rem;
+
+        padding-right: 15rem;
+    }
+}
+
+
+
+/* Adicionando algumas animações no projeto */
+
+.item {
+    --delay: .3s; /* -> criação da var --delay para definir um delay para o surgimento dos itens no main*/
+    animation: appear 3s var(--delay) backwards;
+
+    /* IMPORTANTE: Para dar o efeito de cada item aparecer em sequencia, necessario definir no HTML o valor da var --delay de cada item */
+}
+
+/* criação do @keyframes para aparecer os itens do main */
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    50% {
+        transform: scale(1);
+    }
 }

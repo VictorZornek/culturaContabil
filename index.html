@@ -13,32 +13,167 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page">
-        <img id="logo" src="images/img.jpeg" alt="Logo escrito Cultura Contábil">
-
-        <h1>CONTABILIDADE E ADMINISTRAÇÃO</h1>
-
-        <p>Legalização de Empresas, Fiscal, Pessoal, Contábil, 
-            Assessoria e Consultoria, Regularização de Obras (SERO), 
-            Cálculos Judiciais, MEI e IRPF.
-        </p>
-
-        <div class="buttons">
-            <div id="whatsButton">
-                <a href="https://wa.link/wovltc">
-                <img src="images/whats.svg" alt="Logo Whatsapp">
-                WhatsApp
-                </a>
-
+    <div id="app">
+        <header class="container">
+            <div class="logo">
+                <a href="#principal"><img src="./images/logo-white.svg" alt="Logomarca"></a>
             </div>
-            <div id="emailButton">
-                <a href="mailto:eliana@culturacontabil.com">
-                    <img src="images/email.svg" alt="email">
-                    E-mail
-                </a> 
-            </div>
-        </div>
 
+            <nav>
+                <ul>
+                    <a href="#contact"><li>Contato</li></a>
+                    <a href="#services"><li>Serviços</li></a>
+                    <a href="#quem-sou-eu"><li>Quem sou eu</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="wrapper-principal-contact">
+                        <section id="principal">
+                            <h1>Eliana de Sousa</h1>
+                        
+                            <img src="./images/logo.png" alt="Logomarca">
+        
+                            <h1>Contabilidade</h1>
+            
+                            <p>Atuamos no mercado auxiliando as empresas e agregando valores desde 2012.</p>
+                        </section>
+    
+                        <section id="contact">
+                            <h1>Entre em contato</h1>
+        
+                            <div class="buttons">
+                                <div id="whatsButton">
+                                    <a href="https://wa.link/wovltc">
+                                        <img src="images/whats.svg" alt="Logo Whatsapp">
+                                        <p>Whatsapp</p>
+                                    </a>
+                                </div>
+        
+                                <div id="emailButton">
+                                    <a href="mailto:eliana@culturacontabil.com">
+                                        <img src="images/email.svg" alt="Email">
+                                        <p>E-mail</p>
+                                    </a>
+                                </div>
+                            </div>
+        
+                            <p class="contact-p">Todos os atendimentos são realizados online.</p>
+                        </section>
+                    </div>
+
+    
+                    <section id="services">
+                        <h1>Nossos Serviços</h1>
+    
+                        <figure class="item">
+                            <img src="./images/icons/empresa.svg" alt="">
+        
+                            <figcaption class="details">
+                                <h2>Área de Legalização de empresa</h2>
+        
+                                <ul>
+                                    <li>Abertura de empresa.</li>
+                                    <li>Alterações de atividades societárias.</li>
+                                    <li>Certidões.</li>
+                                    <li>Encerramento de atividades.</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+    
+                        <figure class="item" style="--delay: .6s">
+                            <img src="./images/icons/departamento.svg" alt="">
+        
+                            <figcaption class="details">
+                                <h2>Departamento Pessoal, Trabalhista e Previdênciario</h2>
+        
+                                <ul>
+                                    <li>Admissões.</li>
+                                    <li>Folha de pagamento.</li>
+                                    <li>Rescisões.</li>
+                                    <li>Declarações previdênciarias e trabalhistas.</li>
+                                    <li>Cálculos trabalhistas extrajudiciais.</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+    
+                        <figure class="item" style="--delay: .9s">
+                            <img src="./images/icons/planning.svg" alt="" style="width: 6rem;">
+        
+                            <figcaption class="details">
+                                <h2>Planejamento Previdênciario</h2>
+    
+                                <ul>
+                                    <li>Simulações e ajustes necessários dos CNIS.</li>
+                                    <li>Solicitações de benefícios.</li>
+                                    <li>Aposentadorias, LOAS Auxílios.</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+    
+                        <figure class="item" style="--delay: 1.2s">
+                            <img src="./images/icons/fiscal.svg" alt="">
+        
+                            <figcaption class="details">
+                                <h2>Departamento Fiscal</h2>
+    
+                                <ul>
+                                    <li>Cálculo de impostos.</li>
+                                    <li>Declarações e acessórias.</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+    
+                        <figure class="item" style="--delay: 1.5s">
+                            <img src="./images/icons/accounting.svg" alt="">
+        
+                            <figcaption class="details">
+                                <h2>Departamento Contábil</h2>
+    
+                                <ul>
+                                    <li>Balanço de empresas.</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+    
+                    </section>
+                </div>
+
+
+                <section id="quem-sou-eu">
+                    <h1>Quem sou eu?</h1>
+
+                    <div class="wrapper-perfil">
+                        <img src="./images/perfil.jpg" alt="Imagem de perfil Eliana de Sousa">
+
+
+                        <div>
+                            <p>Meu nome é Eliana de Sousa Lima, sou contadora e perita com formação extra em logística empresarial.
+                                Atuo em contabilidade há mais de 24 anos, tenho larga experiência em diversos ramos de atividades, de pequenos a grande porte.
+                            </p>
+                            <br>
+                            <p> A área contábil nesses últimos 20 anos, teve grandes mudanças, participei da evolução, ao longo desses anos desde o preenchimento de 
+                                uma guia de FGTS e seguro desemprego em máquina de escrever e atual FGTS digital, dos livros físicos e talões de notas para os SPED e 
+                                notas eletrônicas, enfim, participando de todo o progresso da jornada contábil.
+                            </p>
+                            <br>
+                            <p> Atuo em perícias extra judiciais e cálculos previdenciários, 
+                                facilitando todo o processo de regularização de CNIS, e dando o suporte necessário, com a informação de forma precisa e de qualidade  para 
+                                que o cliente tenha a liberdade de escolha de qual a melhor decisão tomar.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+            </div>
+        </main>
+    
+        <footer class="container">© 2024 - Cultura Contábil</footer>
     </div>
+
 </body>
 </html>
